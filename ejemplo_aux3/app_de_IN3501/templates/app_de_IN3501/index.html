@@ -1,17 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
 
     <title>Inicio</title>
 </head>
 <body>
     <div>
+        {% include 'app_de_IN3501/menu.html' %}
         <div id="titulo">
             <h1>¡Hola Mundo!</h1>
         </div>
         <div id="docentes">
-            Ayudantes
+            {{ cargo3 }}
             <li>
                 <ul>Braulio Mellado L.</ul>
                 <ul>Carlos Alberto Vega Hernández</ul>
@@ -23,14 +26,14 @@
                 <ul>Sebastián Donoso</ul>
                 <ul>Sofia Herrera</ul>
             </li>
-            Auxiliares
+            {{ cargo1 }}
             <li>
                 <ul>Javiera Ovalle T.</ul>
                 <ul>Jorge Pinto</ul>
                 <ul>Macarena V. Osorio A.</ul>
                 <ul>Pablo Hernández Muñoz</ul>
             </li>
-            Profesores
+            {{ cargo2 }}
             <li>
                 <ul>Juan D. Velásquez</ul>
                 <ul>Víctor Hernández M.</ul>
