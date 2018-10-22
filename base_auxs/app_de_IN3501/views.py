@@ -12,3 +12,6 @@ def welcome(request):
 
 def tarea(request):
     return render(request, 'app_de_IN3501/tarea.html')
+
+def inputs(request):
+	return render(request, 'app_de_IN3501/inputs.html')
