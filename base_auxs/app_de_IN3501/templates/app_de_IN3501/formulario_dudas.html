@@ -14,8 +14,8 @@
             <h1>¡Hola Mundo!</h1>
         </div>
 <!--       Esto es un comentario      -->
-        <form>
-            <input type="text" id="nombre" name="nombre">
+        <form method="POST" action="/confirmacion_dudas"> {% csrf_token %}
+            <input type="text" id="nombre" name="nombre_name">
             <input type="textArea" id="duda" name="duda">
 
             <div class="form-group">

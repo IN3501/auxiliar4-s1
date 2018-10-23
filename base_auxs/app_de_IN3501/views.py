@@ -18,3 +18,7 @@ def inputs(request):
 
 def formulario_dudas(request):
     return render(request, 'app_de_IN3501/formulario_dudas.html')
+
+def confirmacion_dudas(request):
+    dato_nombre = request.POST['nombre_name']
+    return render(request, 'app_de_IN3501/confirmacion_dudas.html')
