@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <title>Inicio</title>
+</head>
+<body>
+    <div class="container">
+        {% include 'app_de_IN3501/menu.html' %}
+        <div id="titulo">
+            <h1>¡Hola Mundo!</h1>
+        </div>
+<!--       Esto es un comentario      -->
+        <form>
+            <input type="text" id="nombre" name="nombre">
+            <input type="textArea" id="duda" name="duda">
+
+            <div class="form-group">
+                <label for="email">Ingrese su e-mail</label>
+                <input type="email" class="form-control" id="email" name="email_name">
+            </div>
+            <select class="form-control" id="seccion" name="seccion">
+                <option value="1">Seccion 1</option>
+                <option value="2">Seccion 2</option>
+            </select>
+
+        </form>
+    </div>
+</body>
+</html>
