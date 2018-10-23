@@ -21,4 +21,6 @@ def formulario_dudas(request):
 
 def confirmacion_dudas(request):
     dato_nombre = request.POST['nombre_name']
-    return render(request, 'app_de_IN3501/confirmacion_dudas.html')
+    dato_duda = request.POST['duda']
+    contexto = {"nombre":dato_nombre, "duda":dato_duda}
+    return render(request, 'app_de_IN3501/confirmacion_dudas.html', contexto)

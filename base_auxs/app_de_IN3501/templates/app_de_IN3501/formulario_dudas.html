@@ -15,8 +15,8 @@
         </div>
 <!--       Esto es un comentario      -->
         <form method="POST" action="/confirmacion_dudas"> {% csrf_token %}
-            <input type="text" id="nombre" name="nombre_name">
-            <input type="textArea" id="duda" name="duda">
+            <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre_name">
+            <input type="textArea" placeholder="Ingresa tu duda" id="duda" name="duda">
 
             <div class="form-group">
                 <label for="email">Ingrese su e-mail</label>
@@ -26,6 +26,8 @@
                 <option value="1">Seccion 1</option>
                 <option value="2">Seccion 2</option>
             </select>
+
+            <input type="submit">
 
         </form>
     </div>
